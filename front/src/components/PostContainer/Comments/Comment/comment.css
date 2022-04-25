@@ -1,0 +1,53 @@
+.comment {
+  border-bottom: solid 1px var(--post-gray-border);
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-content {
+  margin-left: 35px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.comment button {
+  padding: 5px;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 590px;
+  background: none;
+  color: var(--primary-color);
+  border: none;
+  font-size: 13px;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.comment button:hover {
+  color: var(--red);
+}
+
+.comment .upvote {
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 18px;
+}
+.comment .upvote p {
+  margin-bottom: -3px;
+}
+
+@media (max-width: 703px) {
+  .comment button {
+    margin-left: 340px;
+  }
+}
+@media (max-width: 375px) {
+  .comment button {
+    margin-left: 315px;
+  }
+}
+@media (max-width: 320px) {
+  .comment button {
+    margin-left: 260px;
+  }
+}

@@ -1,0 +1,48 @@
+.side-container {
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: solid 1px var(--post-gray-border);
+  margin-left: 15px;
+  width: 210px;
+  height: 400px;
+  padding: 10px;
+  color: var(--primary-color);
+  background-color: var(--black-default);
+}
+.side-container .post-filter {
+  text-align: center;
+}
+.side-container .btn-filter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.side-container .btn-filter .btn-option {
+  background: none;
+  cursor: pointer;
+  color: var(--gray-text);
+  padding: 6px;
+  border-radius: var(--border-radius);
+  border: solid 1px var(--post-gray-border);
+}
+.side-container .btn-filter .btn-option:hover {
+  border-color: white;
+  color: white;
+}
+.side-container .btn-show-more {
+  background: none;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  color: var(--gray-text);
+}
+.side-container .btn-show-more:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .side-container {
+    display: none;
+  }
+}

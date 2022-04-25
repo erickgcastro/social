@@ -1,0 +1,68 @@
+:root {
+  --blue: #4c0cf8;
+  --purple: #7b0bd9;
+  --faint-purple: #c601f0;
+  --pink: #d90bb7;
+  --red: #f80c5c;
+  --black: #000;
+  --black-default: #242424;
+  --black-side-post: #202020;
+  --shadow: #242424;
+  --black-modal: #444c56;
+  --post-gray-border: #565656;
+  --post-border-input: #484848;
+  --post-background-input: #3a3a3a;
+  --gray-text: #939393;
+  --gray: #c7c7c7;
+  --primary-color: #d7dadc;
+  --login-background: #e1e1e1;
+  --background: #ededed;
+  --white: #fff;
+  --border-radius: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: var(--background);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.cc {
+  position: absolute;
+  margin-top: 85px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ac {
+  display: flex;
+}
+.wl {
+  width: 100%;
+  height: 70px;
+}

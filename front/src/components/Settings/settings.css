@@ -1,0 +1,106 @@
+.sc {
+  border-radius: var(--border-radius);
+  border: solid 1px var(--post-gray-border);
+  color: var(--primary-color);
+  box-sizing: border-box;
+  background-color: var(--black-default);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.sc .alert {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: solid 1px var(--post-gray-border);
+}
+
+.sc form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 450px;
+}
+
+.sc form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.sc form div .select-img {
+  border-radius: var(--border-radius);
+  /* border: solid 1px var(--post-gray-border); */
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 0;
+}
+
+.sc form div .select-img img {
+  width: 70px;
+  height: 70px;
+  background: white;
+}
+
+#image {
+  width: 110px;
+  border: none;
+  margin-left: 10px;
+  padding: 0;
+}
+.sc form div input {
+  padding: 7px;
+  border-radius: var(--border-radius);
+  border: solid 1px var(--post-gray-border);
+}
+
+.sc form .btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.sc form .btns button[type="submit"] {
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  background-color: #2374e1;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  transition: background-color 200ms linear;
+}
+.sc form .btns button[type="submit"]:hover {
+  background-color: var(--red);
+}
+.sc form .btns button.ns {
+  cursor: pointer;
+  color: var(--primary-color);
+  background: none;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  border: solid 1px var(--post-gray-border);
+  transition: border-color 200ms linear;
+  transition: color 200ms linear;
+}
+.sc form .btns button.ns:hover {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+@media (max-width: 375px) {
+  .sc {
+    width: 100%;
+    border-radius: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+}

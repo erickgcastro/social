@@ -1,0 +1,46 @@
+.dropmenu-post {
+  border-radius: 6px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 327px;
+  max-height: 70px;
+  width: 125px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  border: solid 1px var(--post-gray-border);
+}
+
+.dropmenu-post button {
+  width: 100%;
+  background: none;
+  color: var(--primary-color);
+  border: none;
+  font-size: 13px;
+  padding: 3px;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.dropmenu-post button:hover {
+  color: var(--red);
+}
+
+@media (max-width: 505px) {
+  .dropmenu-post {
+    margin-top: 24px;
+    margin-left: 230px;
+  }
+}
+@media (max-width: 375px) {
+  .dropmenu-post {
+    margin-top: 24px;
+    margin-left: 185px;
+  }
+}
+@media (max-width: 320px) {
+  .dropmenu-post {
+    margin-top: 24px;
+    margin-left: 145px;
+  }
+}

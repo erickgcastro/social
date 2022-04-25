@@ -1,0 +1,50 @@
+.block-field {
+  border-radius: var(--border-radius);
+  border: solid 1px var(--post-gray-border);
+  color: var(--primary-color);
+  box-sizing: border-box;
+  background-color: var(--black-default);
+  width: 500px;
+  height: 200px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block-field .content {
+  width: 350px;
+  font-size: 20px;
+  text-align: center;
+}
+.block-field .content .btn {
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 7px 10px;
+  color: var(--red);
+  border: solid 1px var(--red);
+  border-radius: var(--border-radius);
+  background: none;
+  transition: background-color 200ms linear;
+}
+.block-field .content .btn:hover {
+  /* background-color: #522f2f; */
+  background-color: var(--red);
+  color: var(--black-default);
+}
+
+@media (max-width: 425px) {
+  .block-field {
+    width: 375px;
+  }
+}
+@media (max-width: 375px) {
+  .block-field {
+    width: 350px;
+  }
+}
+@media (max-width: 320px) {
+  .block-field {
+    width: 310px;
+  }
+}

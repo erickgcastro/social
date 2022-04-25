@@ -1,0 +1,33 @@
+.error-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.error-page .content {
+  font-size: 22px;
+  width: 500px;
+  text-align: center;
+}
+.error-page .content p {
+  margin-bottom: 20px;
+}
+.error-page .content .link {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+@media (max-width: 425px) {
+  .error-page {
+    position: relative;
+  }
+  .error-page .content {
+    width: 100%;
+    font-size: 18px;
+  }
+}

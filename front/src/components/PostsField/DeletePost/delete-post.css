@@ -1,0 +1,63 @@
+.confirm-delete-post {
+  opacity: 1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #000000eb;
+  z-index: 100;
+  transition: all 100ms linear;
+}
+.confirm-box {
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  background-color: #181818;
+  border: solid 1px var(--post-gray-border);
+}
+.confirm-box p {
+  color: var(--gray);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.confirm-btn button {
+  background-color: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+}
+.confirm-btn .no {
+  padding: 7px;
+  background: none;
+  color: var(--gray-text);
+  border: solid 1px var(--post-gray-border);
+}
+.confirm-btn .no:hover{
+  transition: all 200ms linear;
+  border-color: white;
+  color: white;
+}
+.confirm-btn .yes {
+  border: solid 1px #181818;
+  padding: 8px;
+  color: white;
+  margin-left: 20px;
+  background-color: var(--red);
+  transition: background-color 200ms linear;
+}
+.confirm-btn .yes:hover{
+  border-color: white;
+  transition: all 200ms linear;
+  background-color: var(--blue);
+}

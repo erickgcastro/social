@@ -1,0 +1,11 @@
+
+.modal-focus {
+  opacity: 1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #000000eb;
+  z-index: 100;
+  transition: all 100ms linear;
+  box-sizing: border-box;
+}

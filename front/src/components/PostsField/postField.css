@@ -1,0 +1,34 @@
+.post-field {
+  position: absolute;
+  margin-top: 85px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.posts-container {
+  min-width: 500px;
+  max-width: 500px;
+}
+.modal-delete-post {
+  overflow: hidden;
+}
+
+/* MEDIA */
+@media (max-width: 505px) {
+  .posts-container {
+    min-width: 400px;
+    max-width: 400px;
+  }
+}
+@media (max-width: 375px) {
+  .posts-container {
+    min-width: 350px;
+    max-width: 350px;
+  }
+}
+@media (max-width: 320px) {
+  .posts-container {
+    min-width: 310px;
+    max-width: 310px;
+  }
+}

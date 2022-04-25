@@ -1,0 +1,22 @@
+.about-link {
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--red);
+}
+.img-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.img-list img {
+  width: 250px;
+}
+.img-list .mdb {
+  height: 70px;
+}
+.img-list .rtr {
+  width: 200px;
+}

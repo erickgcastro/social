@@ -1,0 +1,225 @@
+/* ---- NAVBAR ----- */
+.navbar {
+  position: fixed;
+  z-index: 300;
+  box-sizing: border-box;
+  background-color: var(--black-default);
+  color: var(--white);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: box-shadow 100ms linear;
+}
+.title {
+  position: absolute;
+  align-self: flex-start;
+  font-size: 24px;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  align-self: flex-start;
+  font-size: 20px;
+  justify-self: flex-start;
+  transition: transform 200ms linear;
+}
+.h-open {
+  transform: rotate(-160deg);
+  transition: all 200ms linear;
+}
+.side-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(20, 20, 20, 0.562);
+  z-index: 301;
+  transition: background-color 200ms linear;
+}
+.side-menu .op {
+  width: 80%;
+  height: 100%;
+  background-color: var(--black-default);
+  color: var(--primary-color);
+}
+.side-menu .op .link {
+  color: var(--primary-color);
+  text-decoration: none;
+  width: 100%;
+}
+.side-menu .op .user-op {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.side-menu .op .user-op img {
+  width: 50px;
+  border-radius: 50%;
+}
+.side-menu .op .user-op span {
+  font-size: 22px;
+}
+.side-menu .op .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+  font-size: 18px;
+}
+.side-menu .op .actions a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.side-menu .op ul {
+  font-size: 18px;
+  padding: 10px;
+}
+.side-menu .op ul li {
+  width: 100%;
+  padding: 10px;
+}
+
+.side-menu .op .span-tt {
+  position: absolute;
+  bottom: 10px;
+  left: 25%;
+}
+
+/* Botões de atalho */
+.navbar ul {
+  position: absolute;
+  align-self: center;
+  display: flex;
+  gap: 10px;
+}
+.btn-nav {
+  color: var(--white);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  align-self: center;
+  /* margin-left: 15px; */
+  transition: color 250ms linear;
+  transition: background-color 250ms linear;
+  transition: text-decoration 250ms linear;
+}
+.btn-nav:hover {
+  background-color: var(--red);
+  text-decoration: none;
+  color: var(--black-default);
+  transition: all 200ms linear;
+}
+/* Parte que vai ficar a foto e o nome do usuario */
+.user-nav {
+  position: absolute;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.user-nav h4 {
+  font-size: 18px;
+}
+.user-nav img {
+  border: solid 2px var(--black);
+  margin-left: 10px;
+  height: 40px;
+  border-radius: 50%;
+  transition: box-shadow 150ms linear;
+}
+.user-img-hover {
+  box-shadow: 0 0 10px var(--white);
+  transition: all 100ms linear;
+}
+.user-name-hover {
+  text-decoration: underline;
+}
+.user-infos-nav p {
+  align-self: flex-end;
+  font-size: 14px;
+  color: var(--gray);
+}
+.dropdown-menu {
+  z-index: 100;
+  box-sizing: border-box;
+  position: absolute;
+  top: 140px;
+  right: -60px;
+  transform: translate(-50%, -50%);
+  border: solid 1px #444c56;
+  border-radius: 6px;
+  background-color: rgb(36, 36, 36);
+  width: 160px;
+}
+.dropdown-divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--black-modal);
+}
+.dropdown-section {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 0;
+}
+.dropdown-option {
+  text-decoration: none;
+  color: var(--white);
+  padding: 10px 10px;
+}
+.dropdown-option:hover {
+  background-color: var(--red);
+}
+.sing-out {
+  color: var(--red);
+}
+.sing-out:hover {
+  color: var(--white);
+}
+
+@media (min-width: 2300px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .dropdown-menu {
+    right: 270px;
+  }
+  .title {
+    position: relative;
+    align-self: auto;
+  }
+  .navbar ul {
+    position: relative;
+    align-self: auto;
+  }
+  .user-nav {
+    position: relative;
+    align-self: auto;
+  }
+}
+
+@media (max-width: 625px) {
+  .title {
+    display: none;
+  }
+  .user-nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .btn-nav {
+    padding: 15px;
+  }
+}

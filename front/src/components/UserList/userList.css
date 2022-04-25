@@ -1,0 +1,174 @@
+.searchUser {
+  box-sizing: border-box;
+  background-color: var(--black-default);
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: var(--border-radius);
+  border: solid 1px var(--post-border-input);
+}
+.searchUser input[type="text"] {
+  padding: 3px 10px;
+  height: 25px;
+  width: 390px;
+  border-radius: var(--border-radius);
+  border: solid 1px var(--post-border-input);
+  background-color: var(--post-background-input);
+  color: var(--primary-color);
+}
+
+.users .filter {
+  box-sizing: border-box;
+  border: solid 1px var(--post-gray-border);
+  border-radius: var(--border-radius);
+  width: 200px;
+  min-height: 130px;
+  max-height: 130px;
+  padding: 15px;
+  margin-right: 15px;
+  background-color: var(--black-default);
+}
+.users-list {
+  margin-right: 60px;
+  width: 450px;
+}
+.user {
+  transition: box-shadow 70ms linear;
+  border-radius: var(--border-radius);
+  border: solid 1px var(--post-gray-border);
+  box-sizing: border-box;
+  padding: 10px;
+  width: 430px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--black-default);
+  cursor: pointer;
+}
+.user:hover {
+  /* box-shadow: 0px 2px 10px var(--shadow); */
+  border-color: rgb(209, 209, 209);
+}
+.user .infos {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+.user .infos img {
+  margin-right: 10px;
+  width: 50px;
+  border-radius: 50%;
+}
+.user .infos span {
+  margin-top: -2px;
+  font-size: 14px;
+  color: var(--gray-text);
+}
+.user button {
+  border-radius: 6px;
+  min-width: 33px;
+  height: 35px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 3px 5px;
+  cursor: pointer;
+  transition: background linear 200ms;
+}
+.user button:hover {
+  /* background-color: #2374e1;
+  color: #fff; */
+  color: var(--red);
+}
+.user .fw,
+.user .btn-block {
+  border: 1px solid var(--post-gray-border);
+  color: var(--primary-color);
+  background: none;
+  transition: all linear 200ms;
+}
+.user .fw:hover,
+.user .btn-block:hover {
+  background: none;
+  border-color: var(--red);
+  color: var(--red);
+}
+.user .btn-block {
+  font-size: 22px;
+  padding: 5px 10px;
+}
+/* Filter */
+.users .filter form div {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-color);
+}
+.users .filter form div label {
+  margin-bottom: 15px;
+  border-bottom: solid 1px gray;
+}
+.users .filter form div input[type="checkbox"] {
+  margin-right: 7px;
+}
+.users .filter form button[type="submit"] {
+  background-color: #2374e1;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: var(--border-radius);
+  transition: background-color 150ms linear;
+}
+
+@media (max-width: 425px) {
+  .searchUser {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+  .ac {
+    flex-direction: column;
+    align-items: center;
+  }
+  .users .filter {
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .users .filter form div label {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .users .filter form button[type="submit"] {
+    margin-top: 0;
+  }
+
+  .users-list {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+  .user {
+    width: 390px;
+  }
+}
+@media (max-width: 375px) {
+  .user {
+    width: 370px;
+  }
+}
+@media (max-width: 320px) {
+  .user {
+    width: 315px;
+  }
+}
