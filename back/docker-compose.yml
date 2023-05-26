@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: adm
+      MONGO_INITDB_ROOT_PASSWORD: adm
+    networks:
+      - social-back
+
+  server-backend:
+    build: .
+    ports:
+      - 5000:5000
+    env_file:
+      - ./.env
+    depends_on:
+      - mongodb
+    networks:
+      - social-back
+
+networks:
+  social-back:
